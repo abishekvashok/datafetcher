@@ -22,6 +22,7 @@ bar = progressbar.ProgressBar(max_value=10282, widgets=widgets).start()
 with open("RECORDS", 'r') as records:
 	f = open("last_record", "r")
 	last_id = int(f.read())
+	upid = 2000 # Tweak this here
 	f.close()
 	i = 0
 	for record in records:
